@@ -1,7 +1,7 @@
 
 ---
 - name: under maintenance
-  hosts: n3
+  hosts: n1
   become: yes
   tasks:
     - name: under maintenance
