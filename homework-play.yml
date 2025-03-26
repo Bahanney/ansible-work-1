@@ -1,0 +1,26 @@
+---
+- name: Update g1 servers
+  hosts: n1 n2
+  become: yes
+  tasks:
+    - name: Create info.txt with content on g1 servers
+      copy:
+        dest: /home/ec2-user/opt/devops/info.txt
+        content: "Hello from Ansible!"
+        
+        
+
+- name: Update g2 servers
+  hosts: n3 n4
+  become: yes
+  tasks:
+    - name: Create info.txt with content on g2 servers
+      copy:
+        dest: /home/centos/opt/devops/info.txt
+        content: "Hello from Ansible!"
+        
+...
+
+
+
+
