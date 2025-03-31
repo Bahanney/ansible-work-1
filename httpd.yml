@@ -4,19 +4,19 @@
   hosts: n6
   become: yes
   tasks:
-    - name: install Apache2
-      apt:
-        name: apache2
+    - name: install HTTPD
+      yum:
+        name: httpd
         state: present
 
-    - name: start apache2
+    - name: start httpd
       service:
-        name: apache2
+        name: httpd
         state: started
 
-    - name: Enable apache2
+    - name: Enable httpd
       service:
-        name: apache2
+        name: httpd
         enabled: yes
         
 ...
