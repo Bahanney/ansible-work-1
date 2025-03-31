@@ -3,8 +3,8 @@
   hosts: g3
   become: yes
   vars:
-  myusername: Hi-bibi
-  
+    myusername: Hi-bibi
+
   tasks:
     - name: Update Dynamic page
       template:
