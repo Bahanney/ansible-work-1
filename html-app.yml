@@ -1,7 +1,7 @@
 
 ---
 - name: Deploy web App
-  hosts: g3
+  hosts: n3
   become: yes
 
   roles:
